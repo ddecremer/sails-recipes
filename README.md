@@ -93,7 +93,7 @@ Here are the User Stories that were created for this app to be based on. Of cour
     
 Alternatively, you could create a Sails app (with front-end components): `sails new recipe-api`, which you'll get a similar prompt, where you could decide to get an entire boiler-plate web app or not. Both have Views in them bulit into them. We won't be using Views in this walk-through, but even if you go this route and select option 2 on that one, everything here works the same.
 
-    - **NOTE:** If you create another folder outside of the one for this project and run this same command, but select 1, then you can reference it and compare how a full sample web app is built out, but that could be more confusing than it's worth right now. Also, don't select 1 and then use that for following the steps in this walk-through. That'd just *really* confuse you. :)
+  **NOTE:** If you create another folder outside of the one for this project and run this same command, but select 1, then you can reference it and compare how a full sample web app is built out, but that could be more confusing than it's worth right now. Also, don't select 1 and then use that for following the steps in this walk-through. That'd just *really* confuse you. :)
 
 1. Execute `cd recipe-api`
 
