@@ -150,14 +150,14 @@ Alternatively, you could create a Sails app (with front-end components): `sails 
 
 Sails created an `.eslintrc` file, so it'll start yelling at you if it doesn't like some things, like line-breaks, curlys, and indent spaces. So you *could* go in and change a couple of them, but we're going to leave the defaults, especially line-breaks as unix and quotes and single.
 
-1. Find the line with `indent` on it and change the value from `2` to `4`. This will really only matter if you paste in code from this walk-through, which uses 4 spaces of indentation. If you are typing it all out and like 2 spaces better, you can leave this.
-
-1. Find the line with `curly` on it. This rule enforces putting curly braces after things like `if` statements. For concise code, there are some places where we have things like...
+1. Find the line with `curly` on it and change the value `ignore`. This rule enforces putting curly braces after things like `if` statements. For concise code, there are some places where we have things like...
 
     ```
     if (someCondition)
         return someResponse;
     ```
+    
+1. Find the line with `indent` on it and change the value from `2` to `4`. This will really only matter if you paste in code from this walk-through, which uses 4 spaces of indentation. If you are typing it all out and like 2 spaces better, you can leave this.
 
 1. When we create our `mongo-init.js` file in a minute, the ESLint file (`.eslintrc`) would start yelling at you about strings needing single quotes, because our JSON uses double. To make it ignore this file, open `.eslintignore` add add `data/mongo-init.js` to it. Then save it.
 
