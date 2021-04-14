@@ -83,7 +83,17 @@ Here are the User Stories that were created for this app to be based on. Of cour
 
 1. To install Sails, execute `npm install sails -g` for a global machine installation or `npm install sails --save-dev` for a local installation to the current folder.
 
-1. Execute `sails generate new recipe-api --no-front-end`
+1. Execute `sails generate new recipe-api --no-front-end`and enter `2` when prompted with this:
+
+  ```
+    Choose a template for your new Sails app:
+    1. Web App  ·  Extensible project with auth, login, & password recovery
+    2. Empty    ·  An empty Sails app, yours to configure
+    ```
+    
+    Alternatively, you could create a Sails app (with front-end components): `sails new recipe-api`, which you'll get a similar prompt, where you could decide to get an entire boiler-plate web app or not. Both have Views in them bulit into them. We won't be using Views in this walk-through, but even if you go this route and select option 2 on that one, everything here works the same.
+
+    - **NOTE:** If you create another folder outside of the one for this project and run this same command, but select 1, then you can reference it and compare how a full sample web app is built out, but that could be more confusing than it's worth right now. Also, don't select 1 and then use that for following the steps in this walk-through. That'd just *really* confuse you. :)
 
 1. Execute `cd recipe-api`
 
@@ -94,22 +104,10 @@ Here are the User Stories that were created for this app to be based on. Of cour
     ````
     ctrl + `
     ````
-
-1. To create the Sails app, execute `sails new recipe-api --no-frontend`
-
-    Alternatively, you could create a Sails app (with front-end components): `sails new recipe-api`, which you'll get an output like the following, where you could decide to get an entire boiler-plate web app or not, both of which have Views in them. We won't be using Views in this walk-through, but even if you go this route and select 2, everything here works the same.
-
-    ```
-    Choose a template for your new Sails app:
-    1. Web App  ·  Extensible project with auth, login, & password recovery
-    2. Empty    ·  An empty Sails app, yours to configure
-    ```
-
-    - **NOTE:** If you create another folder outside of the one for this project and run this same command, but select 1, then you can reference it and compare how a full sample web app is built out, but that could be more confusing than it's worth right now. Also, don't select 1 and then use that for following the steps in this walk-through. That'd just *really* confuse you. :)
-
+    
 1. Take a look at the app structure. We'll be spending most of our time in the `api` and `config` folders.
 
-1. To see what the Sails app looks like out-of-the-box right now, execute `sails lift` and you should see the following:
+1. To see what the Sails app looks like out-of-the-box right now, execute `sails lift` in the terminal and you should see the following:
 
     ```
     info: Starting app...
