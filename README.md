@@ -86,10 +86,10 @@ Here are the User Stories that were created for this app to be based on. Of cour
 1. Execute `sails generate new recipe-api --no-front-end`and enter `2` when prompted with this:
 
   ```
-    Choose a template for your new Sails app:
-    1. Web App  ·  Extensible project with auth, login, & password recovery
-    2. Empty    ·  An empty Sails app, yours to configure
-    ```
+  Choose a template for your new Sails app:
+  1. Web App  ·  Extensible project with auth, login, & password recovery
+  2. Empty    ·  An empty Sails app, yours to configure
+  ```
     
     Alternatively, you could create a Sails app (with front-end components): `sails new recipe-api`, which you'll get a similar prompt, where you could decide to get an entire boiler-plate web app or not. Both have Views in them bulit into them. We won't be using Views in this walk-through, but even if you go this route and select option 2 on that one, everything here works the same.
 
