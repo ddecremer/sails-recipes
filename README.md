@@ -1,3 +1,5 @@
+**NOTE:** The code in this branch expands on the steps in this walk-through (a.k.a. README). Check out the "BasicDemo-Complete" branch for a trimmed down version that aligns with these steps, doesn't include extra API endpoints, and doesn't have nearly the amount explanatory comments that are contained in this branch.
+
 # Introduction 
 
 This is a Recipe App that uses Sails to perform some basic functions of creating, fetching, and searching Recipes and Users (a.k.a. Cooks and Chefs) through API endpoints.
