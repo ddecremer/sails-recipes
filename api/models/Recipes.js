@@ -10,10 +10,28 @@ module.exports = {
   attributes: {
 
     userEmail: { type: 'string' },
-    name: { type: 'string', required: true, unique: true },
+    name: { type: 'string', required: true, unique: true, maxLength: 100 },
     category: { type: 'string', required: true, isIn: ['Breakfast', 'Lunch', 'Dinner', 'Appetizer', 'Dessert', 'Snack'] },
-    ingredients: { type: 'JSON' },
-    instructions: { type: 'JSON' },
+
+    // Out of the box, Sails.js does not support custom validation messages. Instead, your code should look at (or "negotiate") validation errors thrown by .create() or .update() 
+    //  calls and take the appropriate action, whether that's sending a particular error code in your JSON response or rendering the appropriate message in an HTML error page.
+    //  See the `inputs` section in api/controllers/recipe/create.js for more information on using these to validate incoming data.
+    ingredients: {
+      type: 'JSON',
+      required: true,
+      custom: function(value) {
+        return (Array.isArray(value) && value.length <= 15);
+      }
+    },
+
+    instructions: {
+      type: 'JSON',
+      required: true,
+      custom: function(value) {
+        return (Array.isArray(value) && value.length <= 20);
+      }
+    },
+
     /**
      * To set up a One-to-Many relationship, we need to and an attribute (most likely the name of the model we're associating).
      * Then, we'll need to go to that model and set up the other side of the association.
@@ -33,7 +51,7 @@ module.exports = {
     /**
      * And this one is for associating back to a User.
      */
-    userId: {
+    user: {
         model: 'users'
     },
   },

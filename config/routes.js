@@ -9,11 +9,19 @@
  */
 
 module.exports.routes = {
+
+    // ********** Users ********** //
     'GET /api/users': { controller: 'UserController', action: 'getUsers' },
     'GET /api/users/type/:type': { controller: 'UserController', action: 'getUsersByType' },
     'GET /api/users/id/:id': { controller: 'UserController', action: 'getUserById'},
 
+    'POST /api/users': { controller: 'UserController', action: 'post_user'},
+
+    // ********** Recipes ********** //
+    'GET /api/recipes': { action: 'recipe/all' },
+    'GET /api/recipes/:id': { action: 'recipe/getbyid' },
+    'GET /api/recipes/search': { action: 'recipe/search' },
+
     'POST /api/recipes': { action: 'recipe/create' },
 
-    'GET /api/recipes/search': { action: 'recipe/search' },
 };

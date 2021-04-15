@@ -22,7 +22,7 @@ module.exports = {
     /**
      * And this one is for associating back to a User.
       */
-    userId: {
+    user: {
         model: 'users'
     }
   },

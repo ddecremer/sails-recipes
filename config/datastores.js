@@ -38,10 +38,6 @@ module.exports.datastores = {
     url: 'mongodb://sailor:7.37knots@localhost:27018/sailsRecipes',
     authSource: 'admin',
 
-    // adapter: 'sails-mongo',
-    // url: 'mongodb://sailor:7.37knots@sails-mongo:27017/sailsRecipes',
-    // authSource: 'admin'
-
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *

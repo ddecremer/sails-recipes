@@ -23,7 +23,7 @@ module.exports = {
      */
     recipes: {
       collection: 'recipes',
-      via: 'userId'
+      via: 'user'
     },
   
     /**
@@ -31,7 +31,7 @@ module.exports = {
      */
     reviews: {
       collection: 'reviews',
-      via: 'userId'
+      via: 'user'
     }
   },
 
