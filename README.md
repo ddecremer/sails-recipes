@@ -843,7 +843,7 @@ Okay, we've seen how Blueprints work, but we're not going to use them anymore. Y
     ```
     attributes: { 
         userId: { type: 'string', required: true },
-        name: { type: 'string', required: true, unique },
+        name: { type: 'string', required: true, unique: true },
         category: { type: 'string', required: true, isIn: ['Breakfast', 'Lunch', 'Dinner', 'Appetizer', 'Dessert', 'Snack' ] },
         ingredients: { type: 'JSON', required: true },        
         instructions: { type: 'JSON', required: true },
