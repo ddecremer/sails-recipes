@@ -5,7 +5,9 @@
 This is a Recipe App that uses Sails to perform some basic functions of creating, fetching, and searching Recipes and Users (a.k.a. Cooks and Chefs) through API endpoints.
 This walk-through guides you through how to create these API's from the ground up, but you'll be able to download a copy of the app via the instructions below.
 
-This API application is based on some requirements (listed in the next section) that a group of us got together and hashed out to make it simple, but practical. We had no experience with node.js going into this. We wanted to explore and learn while creating an application that seemed practical to us, but would be simple enough to implement these basic requirements. This same API application was also built using Express, Nest, and Hapi...which I'll provide any links if they also decide to publish each or any of them. :)
+This API application is based on some requirements (listed in the next section) that a group of us got together and hashed out to make it simple, but practical. We had no experience with node.js going into this. We wanted to explore and learn while creating an application that seemed practical to us, but would be simple enough to implement these basic requirements. This walk-through keeps that in mind for you as someone also wanting to learn Sails from scratch and/or having no node.js knowledge or experience. It does involve using MongoDB and Docker, but no real knowledge of those is needed, either. Steps are provided on what to do, but, as with anything, it is highly encouraged to go out and learn some of the basics for those technologies, as well.
+
+This same API application was also built using Express, Nest, and Hapi...which I'll provide any links if they also decide to publish each or any of them. :)
 
 Since this is an API application, it does not contain a front-end/client app, even though Sails does provide that functionality, if you like.
 
