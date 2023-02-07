@@ -27,8 +27,8 @@ Here are the User Stories that were created for this app to be based on. Of cour
         - The recipe's ingredients should not exceed 15 items, and each should not exceed 50 characters.
         - The recipe's instructions should not exceed 20 items, and each should not exceed 200 characters.
         - The chef that submits the recipe should be registered in the system.
-        - The category or type of recipe should be one of the allowed recipes in our system, for example: breakfast, lunch, dinner, snack, - etc.
-        - Each ingredient item, should have the name of the ingredient, the amount and the measurement.
+        - The category or type of recipe should be one of the allowed recipes in our system, for example: breakfast, lunch, dinner, snack, et cetera.
+        - Each ingredient item should have the name of the ingredient, the amount, and the measurement.
 
 1. As a cook, I want to search for recipes that interest me, so I can find recipes by matching the given text.
 
@@ -51,7 +51,7 @@ Here are the User Stories that were created for this app to be based on. Of cour
 
 1. Download and install the latest stable version of [Node](https://nodejs.org/en/download/)
 
-    **NOTE:** You can use the CLI (a.k.a. Terminal) in Visual Studio Code (a.k.a. VS Code) like I will in most of the steps in this walk-through, or you can open a command prompt or PowerShell window and run many of the same commands from there. I'll try to highlight where it might matter where you run things from. Just make sure to be in the correct folder when executing some of the commands. I will refer to any of these simply as the CLI. :) And, when I say "Execute `some command`", it's from the CLI, as well. :)
+    **NOTE:** You can use the CLI (i.e. Terminal) in Visual Studio Code (i.e. VS Code) like I will in most of the steps in this walk-through, or you can open a command prompt or PowerShell window and run many of the same commands from there. I'll try to highlight where it might matter where you run things from. Just make sure to be in the correct folder when executing some of the commands. I will refer to any of these simply as the CLI. :) And, when I say "Execute `some command`", it's from the CLI, as well. :)
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) and leave it running in Linux mode. (Windows mode might work, but I did not test it with that.)
 
